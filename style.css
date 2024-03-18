@@ -1,30 +1,95 @@
 body{
   font-family: "Antic Didone", serif;
-
   font-style: normal;
-  background-color: black;
+  background-color:black;
+}
+
+ h1{
+  font-size: 55px;
+  font-weight: 550;
+ }
+h2{
+  padding-top: 10px;
+  color: black;
+  font-size: 30px;
+}
+p{
+  font-weight: 800;
 }
 container{
   background-color: white;
-  max-width: 990px;
-  margin-top: 20px;
-  display: block;
-  margin: 0 auto;
+  max-width: 1500px;
+ display: block;
+
+ margin-left: 200px;
 }
 section{
   font-family: 700;
 }
 h4{
+ 
   margin-top: 20px;
   font-weight: 500; 
 }
+.link{
+  margin-top: 40px;
+  font-size: 15px;
+  text-decoration: underline;
+
+ letter-spacing: 1.2px;
+font-weight: 700;
+}
+.sidenav {
+  height: 100%; 
+  width: 160px; 
+  margin-top: 10px;
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 70px;
+  margin: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+  display: block;
+}
+.sidenav a:hover {
+  color: #3baea0;
+}
 a{
-  text-decoration: dotted;
-  color: black;
+
+  color:black;
   opacity: 0.8;
 }
+main img{
+  border: 3px solid #3baea0;
+border-radius: 20px;
 
-li{
-  list-style: none;
-  display: flex;
+}
+.btn {
+  background-color:#3baea0;
+  border: none;
+  color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 50px;
+margin-left: 400px;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
