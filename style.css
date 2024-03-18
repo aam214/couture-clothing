@@ -103,7 +103,14 @@ border-radius: 20px;
   margin-top: 50px;
   cursor: pointer;
 }
-
+footer{
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+footer a{
+  color:aqua ;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
