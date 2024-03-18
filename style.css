@@ -26,8 +26,9 @@ h2{
   font-weight: 600;
   font-size: 50px;
 }
-p{
+main p{
   font-weight: 800;
+  letter-spacing: 1.5px;
 }
 container{
   background-color: white;
@@ -37,6 +38,10 @@ container{
 }
 section{
   font-family: 700;
+}
+h3{
+  font-size: 40px;
+  letter-spacing: 1.5px;
 }
 h4{
   margin-top: 20px;
