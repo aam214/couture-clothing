@@ -1,20 +1,29 @@
 body{
   font-family: "Antic Didone", serif;
-  font-weight: 400;
+
   font-style: normal;
+  background-color: black;
+}
+container{
+  background-color: white;
+  max-width: 990px;
+  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+section{
+  font-family: 700;
+}
+h4{
+  margin-top: 20px;
+  font-weight: 500; 
+}
+a{
+  text-decoration: dotted;
+  color: black;
+  opacity: 0.8;
 }
 
-header {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-color: white;
-height: auto;
-max-width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("pictures/silks.jpg");
-}
 li{
   list-style: none;
   display: flex;
