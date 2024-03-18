@@ -3,15 +3,25 @@ body{
   font-style: normal;
   background-color:black;
 }
-
+header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 50px 0;
+ background-image: 
+    url("pictures/colorful-store.jpg");
+}
  h1{
-  font-size: 55px;
-  font-weight: 550;
- }
+  font-size: 70px;
+  font-weight: 600;
+  color:black;
+}
 h2{
   padding-top: 10px;
-  color: black;
-  font-size: 30px;
+  color:black;
+  font-weight: 600;
+  font-size: 50px;
 }
 p{
   font-weight: 800;
@@ -20,29 +30,24 @@ container{
   background-color: white;
   max-width: 1500px;
  display: block;
-
  margin-left: 200px;
 }
 section{
   font-family: 700;
 }
 h4{
- 
   margin-top: 20px;
   font-weight: 500; 
 }
-.link{
-  margin-top: 40px;
-  font-size: 15px;
-  text-decoration: underline;
-
- letter-spacing: 1.2px;
-font-weight: 700;
+.icon{
+  border-radius: 20px;
+  margin-bottom: 100px;
+  margin-left: 10px;
 }
 .sidenav {
   height: 100%; 
   width: 160px; 
-  margin-top: 10px;
+
   position: fixed; 
   z-index: 1; 
   top: 0; 
@@ -55,7 +60,7 @@ font-weight: 700;
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   color:white;
   display: block;
 }
@@ -68,7 +73,7 @@ a{
   opacity: 0.8;
 }
 main img{
-  border: 3px solid #3baea0;
+  border: 4px solid #3baea0;
 border-radius: 20px;
 
 }
