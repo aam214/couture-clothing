@@ -17,6 +17,9 @@ header {
   font-weight: 600;
   color:black;
 }
+.grid{
+  margin-right:900px;
+}
 h2{
   padding-top: 10px;
   color:black;
@@ -68,7 +71,8 @@ h4{
   color: #3baea0;
 }
 a{
-
+text-decoration: none;
+font-weight: 600;
   color:black;
   opacity: 0.8;
 }
@@ -82,15 +86,14 @@ border-radius: 20px;
   border: none;
   color: white;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  padding: 10px 32px;
+  padding: 20px 40px;
   text-align: center;
   text-decoration: none;
   display:inline-block;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 20px;
   margin: 0 auto;
   margin-top: 50px;
-margin-left: 400px;
   cursor: pointer;
 }
 
