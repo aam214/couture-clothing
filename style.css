@@ -47,6 +47,22 @@ h4{
   margin-top: 20px;
   font-weight: 500; 
 }
+.main-dresses-2-column{
+  padding-left: 270px;
+  display: grid;
+  grid-gap:10px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 300px;
+}
+.card{
+  width: 350px;
+}
+.card-text{
+  font-size: 30px;
+  text-align: center;
+}
+
 .icon{
   border-radius: 20px;
   margin-bottom: 100px;
