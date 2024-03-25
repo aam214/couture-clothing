@@ -4,13 +4,7 @@ body{
   background-color:black;
 }
 header {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 50px 0;
- background-image: 
-    url("pictures/colorful-store.jpg");
+
 }
  h1{
   font-size: 70px;
@@ -126,6 +120,17 @@ footer{
   margin-top: 10px;
   color: white;
   text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    background-image:
+      url("pictures/colorful-store.jpg");
+    color: rgb(204, 200, 200);
+    font-weight: 400;
+    font-style: normal;
+  
 }
 footer a{
   color:aqua ;
