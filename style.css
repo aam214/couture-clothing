@@ -66,12 +66,12 @@ h4{
   font-weight: 500; 
 }
 .main-dresses-2-column{
-  padding-left: 270px;
+  padding-left: 110px;
   display: grid;
   grid-gap:2px;
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .card{
   width: 270px;
@@ -79,6 +79,17 @@ h4{
 .card-text{
   font-size: 30px;
   text-align: center;
+}
+p{
+  color: black;
+}
+.click{
+  color: black;
+  font-weight: bold;
+}
+.click:hover{
+  cursor: pointer;
+  color: #fdb44b;
 }
 .card:hover {
   transform: scale(1.02);
@@ -129,7 +140,7 @@ footer{
     padding: 70px 30px;
 }
 footer a{
-  color:aqua ;
+  color:#fdb44b;
 }
 @media(max-width:960px){
   header{
