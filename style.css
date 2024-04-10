@@ -17,6 +17,16 @@ margin-top: 20px;
 display: block;
 margin: 0 auto;
 }
+.nav-link{
+  font-size: 26px;
+  color:white;
+  padding-left: 10px;
+  letter-spacing: 2.5px;
+}
+.nav-link:hover{
+  color: #fdb44b;
+  cursor: pointer;
+}
  h1{
   font-size: 90px;
   font-weight: 400;
@@ -120,4 +130,10 @@ footer{
 }
 footer a{
   color:aqua ;
+}
+@media(max-width:960px){
+  header{
+    padding: 50px 0;
+  }
+
 }
