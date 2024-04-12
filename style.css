@@ -88,26 +88,35 @@ h5{
 .main-dresses-2-column{
   padding-left: 110px;
   display: grid;
-  grid-gap:2px;
-
+margin-bottom: 50px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 .card{
-  width: 270px;
+  width: 240px;
+
 }
-.card-text{
-  font-size: 30px;
+.card-text {
+  font-size: 27px;
   text-align: center;
 }
 
 .click{
-  color: black;
-  font-weight: bold;
+  padding: 10px;
+  margin-top: 20px;
+  background-color:  #ff9a8d;
+  border: none;
+  width: 120px;
+color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 42px;
+  border-radius: 8px;
 }
 .click:hover{
   cursor: pointer;
-  color: #fdb44b;
+  text-decoration: underline;
+  opacity: 0.8;
 }
 .card:hover {
   transform: scale(1.02);
@@ -119,7 +128,7 @@ a{
 text-decoration: none;
 font-weight: 600;
   color:black;
-  opacity: 0.8;
+
 }
 main img{
   border: 4px solid #fdb44b;
@@ -142,23 +151,24 @@ border-radius: 20px;
   cursor: pointer;
 }
 footer{
-  margin-top: 10px;
+  margin-top: 20px;
   color: white;
   text-align: center;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 40px;
-    background-image:
-      url("pictures/canvas-wallpaper.jpg");
+    padding-top: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("pictures/art-deco.jpg");
     color: rgb(204, 200, 200);
     font-weight: 400;
     font-style: normal;
     padding: 70px 30px;
 }
 footer a{
-  color:#fdb44b;
+  color: white;
+  font-weight: bold;
 }
 @media(max-width:960px){
   header{
