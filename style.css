@@ -71,6 +71,8 @@ section{
 h3{
   font-size: 40px;
   letter-spacing: 1.5px;
+margin-left: 70px;
+margin: 50px;
 }
 h4{
   margin-top: 20px;
@@ -183,14 +185,23 @@ footer a{
   h2{
     font-size: 20px;
   }
+ 
   h5{
-    font-size: 50px;
+    font-size: 48px;
   }
   main img{
     width: 250px;
   }
   .main-dresses-2-column{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 18px;
+  }
+  .card{
+    width: 180px;
+    margin-top: 20px;
+  }
+  .click{
+    margin:20px
   }
 container{
   margin: 20px;
