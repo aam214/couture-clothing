@@ -165,7 +165,7 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("pictures/art-deco.jpg");
     color: rgb(204, 200, 200);
     font-weight: 400;
@@ -174,7 +174,7 @@ footer{
 }
 footer a{
   color: white;
-  font-weight: bold;
+  text-decoration: underline;
 }
 @media(max-width:960px){
   header{
@@ -201,7 +201,7 @@ footer a{
   margin-left: -500px;
     
   }
-  .main-dresses-2-column{
+  .main-2-column{
     grid-template-columns: 1fr 1fr;
     padding-left: 18px;
   }
