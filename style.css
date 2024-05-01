@@ -27,6 +27,9 @@ margin: 0 auto;
   color: #fdb44b;
   cursor: pointer;
 }
+.cart{
+  display: flex;
+}
 i{
 font-size: 30px;
 margin-top: 10px;
@@ -36,6 +39,13 @@ margin-left: 10px;
 }
 i:hover{
   opacity: 0.8;
+  color: white;
+}
+.cart-amount{
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+padding-left: 10px;
   color: white;
 }
  h1{
