@@ -101,7 +101,7 @@ h5{
   padding-left: 30px;
   letter-spacing: 2px;
 }
-.main-2-column{
+.main-4-column{
   padding-left: 110px;
   display: grid;
 margin-bottom: 50px;
@@ -109,7 +109,7 @@ margin-bottom: 50px;
   margin-top: 50px;
 }
 .card{
-  width: 240px;
+  width: 300px;
 margin-top: 20px;
 }
 .card-text {
@@ -211,7 +211,7 @@ footer a{
  
     
   }
-  .main-2-column{
+  .main-4-column{
     grid-template-columns: 1fr 1fr;
     padding-left: 18px;
   }
