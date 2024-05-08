@@ -39,7 +39,12 @@ margin-left: 10px;
 }
 i:hover{
   opacity: 0.8;
-  color: white;
+
+}
+main i{
+  font-size: 20px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .cart-amount{
   font-size: 20px;
