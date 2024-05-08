@@ -41,22 +41,7 @@ i:hover{
   opacity: 0.8;
 
 }
-main i{
-  font-size: 18px;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.cost{
-  margin-top: 40px;
-  font-size: 20px;
-}
-.number{
-  padding-left: 10px;
-  font-size: 20px;
-}
-  .quantity{
-padding-left: 95px;
-}
+
 .cart-amount{
   font-size: 20px;
   font-weight: bold;
@@ -132,9 +117,25 @@ margin-top: 20px;
   font-size: 27px;
   text-align: center;
 }
-
+main i{
+  font-size: 18px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cost{
+  margin-top: 40px;
+  font-size: 20px;
+}
+.number{
+  padding-left: 10px;
+  font-size: 20px;
+}
+  .quantity{
+padding-left: 95px;
+}
 .click{
   padding: 10px;
+
   margin-top: 20px;
   background-color:  #ff9a8d;
   border: none;
@@ -142,7 +143,7 @@ margin-top: 20px;
 color: white;
   font-size: 18px;
   text-align: center;
-  margin-left: 42px;
+  margin-left: 65px;
   border-radius: 8px;
 }
 .click:hover{
