@@ -2,34 +2,33 @@ let shop =document.getElementById('store');
 let storeItemsData = 
 [{ id: "Clothing Item1", name: "Silk Dress",
 price: 50,  
-img: "pictures/off-shoulder-dress.jpg"},
+img: "pictures/off-shoulder-dress.jpg",},
 {id: "Clothing Item2", name: "Sequin Dress",
 price: 99, 
-img: "pictures/sequin-dress.jpg"},
+img: "pictures/sequin-dress.jpg",},
 {id: "Clothing Item3", name: "Casual Dress",
 price: 70,
-img: "pictures/leather-jacket.jpg"},
+img: "pictures/leather-jacket.jpg",},
 { id: "Clothing Item4", name: "Summer Dress",
 price: 58, 
-img: "pictures/white-dress.jpg"},
+img: "pictures/white-dress.jpg",},
 { id: "Clothing Item5", name: "Spring Dress",
 price: 40, 
 img: "pictures/casual-dress.jpg"},
 { id: "Clothing Item6", name: "Wedding Dress",
 price: 570,
-img: "pictures/wedding.jpg"},
+img: "pictures/wedding.jpg",},
 {id: "Clothing Item7", name: "Formal Dress",
 price: 150, 
-img:"pictures/bridesmaid.jpg" },
+img:"pictures/bridesmaid.jpg", },
 {id: "Clothing Item8", name: "Chiffon Dress",
 price: 90, 
-img:"pictures/red-oneshoulder.jpg"}]
-
+img:"pictures/red-oneshoulder.jpg",}]
 
 let generateStore = () =>{
 
 return (store.innerHTML = storeItemsData.map((x) =>{
-let {id, name, price, img} =x
+let {id, name, price, img} =x;
 
   return `
 <div id=product-id-${id} class="card">
@@ -39,28 +38,27 @@ let {id, name, price, img} =x
 <div class="cost">
 <strong>$ ${price} </strong>
 <span class="quantity">
-<i onClick="decrement()" class="fa-solid fa-minus"></i>
+<i class="fa-solid fa-minus" onClick="decrement()"></i>
 <span id=${id} class="number">0</span>
-<i onClick="increment()" class="fa-solid fa-plus"></i>
+<i class="fa-solid fa-plus" onClick="increment()"></i>
 </span>
 </div>
 <div class="click">Add to cart</div>
 </div>
 </div>`;
-}).join(""));
-
-
+})
+.join(""));
 };
- generateStore(); 
+
+generateStore(); 
   
-let increment = () =>{
+let increment = () => {
+
 console.log("increment");
-}
+};
 
-let decrement = () =>{
+let decrement = () => {
   console.log("decrement");
-}
+};
 
-let update = () =>{
-  
-}
+
