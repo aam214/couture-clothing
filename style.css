@@ -42,9 +42,20 @@ i:hover{
 
 }
 main i{
-  font-size: 20px;
+  font-size: 18px;
   flex-direction: row;
   justify-content: space-between;
+}
+.cost{
+  margin-top: 40px;
+  font-size: 20px;
+}
+.number{
+  padding-left: 10px;
+  font-size: 20px;
+}
+  .quantity{
+padding-left: 95px;
 }
 .cart-amount{
   font-size: 20px;
