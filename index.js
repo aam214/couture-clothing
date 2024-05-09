@@ -48,7 +48,7 @@ let {id, name, price, img} =x;
   <div class="card-body">
     <p class="card-text">${name} </p>
 <div class="cost">
-<strong>$ ${price} </strong>
+<span>$ ${price} </span>
 <span class="quantity">
 <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
 <span id=${id} class="number">0</span>
@@ -77,21 +77,24 @@ cart.push ({
 }else {
   search.item +=1;
 }
-console.log(cart);
+
+update(selectedItem.id);
 };
 
 let decrement = (id) => {
   let selectedItem= id;
 let search = cart.find((x) =>x.id ===selectedItem.id);
-if (search ===undefined){
-  cart.push({
-    id:selectedItem.id,
-    item: 1,
-
-  });
-}else{
+if (search.item ===0)
+return;
+else{
   search.item -=1;
 }
-console.log(cart);
-};
 
+
+update(selectedItem.id);
+};
+let update =(id) =>{
+  let search = cart.find ((x) => x.id ===id);
+  console.log(search.item);
+document.getElementById(id).innerHTML=search.item;
+};
