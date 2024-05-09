@@ -125,6 +125,7 @@ main i{
 .cost{
   margin-top: 40px;
   font-size: 20px;
+  padding-left: 10px;
 }
 .number{
   padding-left: 10px;
@@ -225,20 +226,21 @@ footer a{
   }
   section img{
     width:280px;
- 
-    
   }
   .main-4-column{
     grid-template-columns: 1fr 1fr;
     padding-left: 18px;
   }
   .card{
-    width: 180px;
+    width: 280px;
     margin-top: 20px;
   }
   .click{
     margin:20px
   }
+  .quantity{
+    padding-left: 90px;
+    }
 container{
   margin: 20px;
 padding: 20px;

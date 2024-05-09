@@ -82,7 +82,16 @@ console.log(cart);
 
 let decrement = (id) => {
   let selectedItem= id;
-  console.log(selectedItem.id);
-};  
+let search = cart.find((x) =>x.id ===selectedItem.id);
+if (search ===undefined){
+  cart.push({
+    id:selectedItem.id,
+    item: 1,
 
+  });
+}else{
+  search.item -=1;
+}
+console.log(cart);
+};
 
