@@ -1,46 +1,46 @@
-let shop =document.getElementById('store');
+let shops =document.getElementById('tops');
 
-let storeItemsData = [
-  { id: "clothingItem1", 
-  name: "Silk Dress",
-price: 50,  
-img: "pictures/off-shoulder-dress.jpg",} ,
-{id: "clothingItem2", 
-name: "Sequin Dress",
-price: 99, 
-img: "pictures/sequin-dress.jpg",} ,
-{id: "clothingItem3", 
-name: "Casual Dress",
-price: 70,
-img: "pictures/leather-jacket.jpg",} ,
-{ id: "clothingItem4", 
-name: "Summer Dress",
-price: 58, 
-img: "pictures/white-dress.jpg",} ,
-{ id: "clothingItem5", 
-name: "Spring Dress",
+let topsItemsData = [
+  { id: "clothingItem9", 
+  name: "Crop Top",
+price: 20,  
+img: "pictures/black-crop.jpg",} ,
+{id: "clothingItem10", 
+name: "Knit Top",
 price: 40, 
-img: "pictures/casual-dress.jpg",} ,
-{ id: "clothingItem6", 
-name: "Wedding Dress",
-price: 570,
-img: "pictures/wedding.jpg",} ,
-{id: "clothingItem7", 
-name: "Formal Dress",
-price: 150, 
-img:"pictures/bridesmaid.jpg",} ,
-{id: "clothingItem8", 
-name: "Chiffon Dress",
+img: "pictures/orange-top.jpg",} ,
+{id: "clothingItem11", 
+name: "Blazer",
+price: 100,
+img: "pictures/blazer.jpg",} ,
+{ id: "clothingItem12", 
+name: "Halter",
+price: 60, 
+img: "pictures/halter.jpg",} ,
+{ id: "clothingItem13", 
+name: "Boho Top",
 price: 90, 
-img:"pictures/red-oneshoulder.jpg",}
+img: "pictures/boho-top.jpg",} ,
+{ id: "clothingItem14", 
+name: "Flannel",
+price: 60,
+img: "pictures/flannel.jpg",} ,
+{id: "clothingItem15", 
+name: "Blouse",
+price: 70, 
+img:"pictures/brown-blouse.jpg",} ,
+{id: "clothingItem16", 
+name: "Sweater",
+price: 80, 
+img:"pictures/turtleneck.jpg",}
 
 ];
 
 let cart =[ ];
 
-let generateStore = () =>{
+let generateTops = () =>{
 
-return (store.innerHTML = storeItemsData.map((x) =>{
+return (tops.innerHTML = topsItemsData.map((x) =>{
 let {id, name, price, img} =x;
 
   return `
@@ -63,7 +63,7 @@ let {id, name, price, img} =x;
 .join(""));
 };
 
-generateStore(); 
+generateTops(); 
   
 let increment = (id) => {
 let selectedItem= id;
