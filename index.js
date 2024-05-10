@@ -99,3 +99,9 @@ let update =(id) =>{
   console.log(search.item);
 document.getElementById(id).innerHTML=search.item;
 };
+
+
+let calculation =()=>{
+  let cartIcon = document.getElementById("cartAmount")
+  console.log(cart.map((x) => x.item));
+};
