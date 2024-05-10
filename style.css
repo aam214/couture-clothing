@@ -22,19 +22,19 @@ margin: 0 auto;
   color:white;
   padding-left: 10px;
   letter-spacing: 2.5px;
+
 }
 .nav-link:hover{
   color: #fdb44b;
   cursor: pointer;
 }
-.cart{
-  display: flex;
-}
+
+
 i{
 font-size: 30px;
 margin-top: 20px;
 margin-left: 10px;
-float: left;
+padding-bottom: 10px;
   color: #fdb44b;
   cursor: pointer;
 }
@@ -46,11 +46,12 @@ i:hover{
 .cart-amount{
   font-size: 20px;
   font-weight: bold;
-  float: left;
+float: inline-start;
   padding: 2px;
+  margin-bottom:40px;
   border-radius: 2px;
   background-color: rgb(182, 122, 122);
-margin-left: 10px;
+
   color: white;
 }
  h1{
