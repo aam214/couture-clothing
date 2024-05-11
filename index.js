@@ -84,18 +84,21 @@ update(selectedItem.id);
 let decrement = (id) => {
   let selectedItem= id;
 let search = cart.find((x) =>x.id ===selectedItem.id);
-if (search.item ===0)
-return;
+if (search ===undefined) return;
+else if (search.item ===0) return;
 else{
   search.item -=1;
 }
 localStorage.setItem("amount",JSON.stringify(cart));
+cart = cart.filter ((x) => x.item !==0);
+
 update(selectedItem.id);
+localStorage.setItem("amount",JSON.stringify(cart));
 };
 
 let update = (id)=>{
   let search =cart.find((x) =>x.id=== id);
-  //console.log(search.item);
+
   document.getElementById(id).innerHTML =search.item;
 calculation();
 
