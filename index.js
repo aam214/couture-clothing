@@ -77,8 +77,8 @@ cart.push ({
 }else {
   search.item +=1;
 }
-localStorage.setItem("amount", JSON.stringify(cart));
 update(selectedItem.id);
+localStorage.setItem("amount", JSON.stringify(cart));
 };
 
 let decrement = (id) => {
