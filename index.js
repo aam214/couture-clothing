@@ -90,18 +90,21 @@ return;
 else{
   search.item -=1;
 }
-
-
 update(selectedItem.id);
 };
-let update =(id) =>{
-  let search = cart.find ((x) => x.id ===id);
-  console.log(search.item);
-document.getElementById(id).innerHTML=search.item;
-};
 
+let update = (id)=>{
+  let search =cart.find((x) =>x.id=== id);
+  //console.log(search.item);
+  document.getElementById(id).innerHTML =search.item;
+calculation();
+
+};
 
 let calculation =()=>{
-  let cartIcon = document.getElementById("cartAmount")
-  console.log(cart.map((x) => x.item));
+  let cartIcon = document.getElementById("cartAmount");
+  //console.log(cart.map((x) => x.item).reduce((x,y)=> x+y,0));
+cartIcon.innerHTML =cart.map((x)=> x.item).reduce((x,y)=> x+y,0);
 };
+
+
