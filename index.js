@@ -36,13 +36,12 @@ img:"pictures/red-oneshoulder.jpg",}
 
 ];
 
-let cart =[ ];
+let cart = JSON.parse(localStorage.getItem("amount")) || [] 
 
 let generateStore = () =>{
-
 return (store.innerHTML = storeItemsData.map((x) =>{
 let {id, name, price, img} =x;
-
+let search = cart.find((x)=>x.id===id) || [];
   return `
 <div id=product-id-${id} class="card">
   <img src=${img} class="img-fluid rounded shadow" alt="Dresses">
@@ -52,7 +51,7 @@ let {id, name, price, img} =x;
 <span>$ ${price} </span>
 <span class="quantity">
 <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
-<span id=${id} class="number">0</span>
+<span id=${id} class="number">${search.item===undefined? 0 : search.item}</span>
 <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
 </span>
 </div>
@@ -78,7 +77,7 @@ cart.push ({
 }else {
   search.item +=1;
 }
-
+localStorage.setItem("amount", JSON.stringify(cart));
 update(selectedItem.id);
 };
 
@@ -90,6 +89,7 @@ return;
 else{
   search.item -=1;
 }
+localStorage.setItem("amount",JSON.stringify(cart));
 update(selectedItem.id);
 };
 
