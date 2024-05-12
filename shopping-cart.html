@@ -19,14 +19,14 @@
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="p-4">
       <span class="text-body-secondary">     
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="dresses.html">Dresses</a>
         <a class="nav-link" href="tops.html">Tops</a>
         <a class="nav-link"  href="shoes.html" >Shoes</a>
         <div>
         <a href="shopping-cart.html" aria-current="page" >
           <i class="fa-solid fa-cart-shopping"></i>
-          <div class="cart-amount">0</div>
+          <div id="amount"  class="cart-amount">0</div>
         </div>
       </span>
         </a>
@@ -40,8 +40,10 @@
     </div>
   </nav>
 
-  <h1>Shopping Cart</h1>
-  <h2>You have amazing style!</h2>
+  <h1 class="p-4">Shopping Cart</h1>
+
+  <div id="total" class="total"></div>
+  <div id="cart-saved" class="cart-saved"></div>
   <footer>
     This website was designed and coded by Ariana Morin. It is open-sourced on
     <a

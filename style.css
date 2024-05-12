@@ -191,11 +191,25 @@ border-radius: 20px;
   margin-top: 50px;
   cursor: pointer;
 }
+.home-button{
+  background-color:#fdb44b;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+margin-top: 100px;
+  margin-left: 745px;
+float: left;
+  cursor: pointer;
+}
 footer{
-  margin-top: 20px;
+  margin-top: 400px;
   color: white;
   text-align: center;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -210,6 +224,12 @@ footer{
 footer a{
   color: white;
   text-decoration: underline;
+}
+.cart-message{
+  font-size: 40px;
+  margin-top:50px;
+  color: white;
+  text-align: center;
 }
 @media(max-width:960px){
   header{
