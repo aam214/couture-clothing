@@ -1,5 +1,7 @@
 let shops =document.getElementById('tops');
 
+let cart = JSON.parse(localStorage.getItem("amount")) || [ ] ;
+
 let topsItemsData = [
   { id: "clothingItem9", 
   name: "Crop Top",
@@ -36,13 +38,12 @@ img:"pictures/turtleneck.jpg",}
 
 ];
 
-let cart =[ ];
 
 let generateTops = () =>{
 
 return (tops.innerHTML = topsItemsData.map((x) =>{
-let {id, name, price, img} =x;
-
+let { id, name, price, img } =x;
+let search = cart.find((x) => x.id=== id) || [ ];
   return `
 <div id=product-id-${id} class="card">
   <img src=${img} class="img-fluid rounded shadow" alt="Dresses">
@@ -80,22 +81,31 @@ cart.push ({
 }
 
 update(selectedItem.id);
+localStorage.setItem("amount", JSON.stringify(cart));
 };
 
 let decrement = (id) => {
   let selectedItem= id;
 let search = cart.find((x) =>x.id ===selectedItem.id);
-if (search.item ===0)
-return;
+if (search ===undefined) return;
+else if (search.item ===0) return;
 else{
   search.item -=1;
 }
-
-
 update(selectedItem.id);
+cart = cart.filter ((x) => x.item !==0);
+localStorage.setItem("amount", JSON.stringify(cart));
 };
+
 let update =(id) =>{
   let search = cart.find ((x) => x.id ===id);
   console.log(search.item);
 document.getElementById(id).innerHTML=search.item;
+calculation();
+
 };
+let calculation = () =>{
+let cartIcon =document.getElementById ("amount");
+cartIcon.innerHTML =cart.map((x) => x.item).reduce((x,y) => x+y,0);
+};
+calculation();
