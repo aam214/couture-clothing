@@ -1,5 +1,5 @@
 let total = document.getElementById("total");
-let cartSaved =document.getElementById("cart-saved");
+let CartSaved =document.getElementById("cart-saved");
 
 
 let cart = JSON.parse(localStorage.getItem("amount")) || [ ] ;
@@ -12,11 +12,16 @@ let calculation = () => {
 calculation();
 
 
-let generateSavedItems = ()=>{
+let generateSavedItems = ()=> {
   if(cart.length !==0){
-    console.log("Items are in cart!");
+ return (CartSaved.innerHTML= cart.map((x) =>{
+  console.log(x.id);
+return `
+<h2 class="cart-filled">Hello</h2>
+`;
+ }).join(""));
   }else{
-cartSaved.innerHTML =``;
+CartSaved.innerHTML= ``;
 total.innerHTML = `
  <div class="cart-message">Cart is Empty!</div>
  <a href="index.html" class="home-button" title="Back to Homepage">Back to Home</a>
