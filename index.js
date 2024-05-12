@@ -36,7 +36,7 @@ img:"pictures/red-oneshoulder.jpg",}
 
 ];
 
-let cart = JSON.parse(localStorage.getItem("amount")) || [] 
+let cart = JSON.parse(localStorage.getItem("amount")) || [] ;
 
 let generateStore = () =>{
 return (store.innerHTML = storeItemsData.map((x) =>{
@@ -89,10 +89,9 @@ else if (search.item ===0) return;
 else{
   search.item -=1;
 }
-localStorage.setItem("amount",JSON.stringify(cart));
+update(selectedItem.id);
 cart = cart.filter ((x) => x.item !==0);
 
-update(selectedItem.id);
 localStorage.setItem("amount",JSON.stringify(cart));
 };
 
