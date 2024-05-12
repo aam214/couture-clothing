@@ -1,4 +1,4 @@
-let shops =document.getElementById('tops');
+let tops =document.getElementById('tops');
 
 const cart = JSON.parse(localStorage.getItem("amount")) || [ ] ;
 
