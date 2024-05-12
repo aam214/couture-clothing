@@ -15,7 +15,7 @@ calculation();
 let generateSavedItems = ()=> {
   if(cart.length !==0){
  return (CartSaved.innerHTML= cart.map((x) =>{
-  console.log(x.id);
+
 return `
 <h2 class="cart-filled">Hello</h2>
 `;
