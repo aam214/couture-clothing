@@ -110,6 +110,7 @@ h5{
 .main-4-column{
   padding-left: 110px;
   display: grid;
+  gap:20px;
 margin-bottom: 50px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 50px;
@@ -132,10 +133,11 @@ main i{
   margin-top: 40px;
   font-size: 20px;
   font-weight:900;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 .number{
   padding-left: 10px;
+
   font-size: 20px;
 
 }
@@ -235,7 +237,7 @@ footer a{
   color: white;
   text-align: center;
 }
-@media(max-width:960px){
+@media(max-width:900px){
   header{
     padding: 30px 0;
     margin: 8px;
@@ -248,29 +250,40 @@ footer a{
   h2{
     font-size: 20px;
   }
- 
+
   h5{
     font-size: 48px;
   }
   main img{
-    width: 310px;
+    width: 180px;
   }
   section img{
     width:280px;
   }
   .main-4-column{
     grid-template-columns: 1fr 1fr;
-    padding-left: 18px;
+    padding: 20px;
+    gap: 5px;
   }
   .card{
-    width: 280px;
+    width: 176px;
     margin-top: 20px;
   }
-  .click{
-    margin:20px
-  }
-  .quantity{
-    padding-left: 90px;
+.click{
+  margin-left: -2px;
+  padding: 5px 10px;
+}
+.cost{
+  margin-top: 10px;
+  font-size: 18px;
+}
+.number{
+  padding-left: 10px;
+  font-size: 18px;
+}
+.quantity{
+  padding-left:2px;
+  font-size: 10px;
     }
 container{
   margin: 20px;
