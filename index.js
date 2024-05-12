@@ -1,7 +1,7 @@
 let shop =document.getElementById('store');
 
 
-let cart = JSON.parse(localStorage.getItem("amount")) || [] ;
+const cart = JSON.parse(localStorage.getItem("amount")) || [] ;
 
 let generateStore = () =>{
 return (store.innerHTML = storeItemsData.map((x) =>{

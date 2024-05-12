@@ -33,3 +33,39 @@ price: 90,
 img:"pictures/red-oneshoulder.jpg",}
 
 ];
+let topsItemsData = [
+  { id: "clothingItem9", 
+  name: "Crop Top",
+price: 20,  
+img: "pictures/black-crop.jpg",} ,
+{id: "clothingItem10", 
+name: "Knit Top",
+price: 40, 
+img: "pictures/orange-top.jpg",} ,
+{id: "clothingItem11", 
+name: "Blazer",
+price: 100,
+img: "pictures/blazer.jpg",} ,
+{ id: "clothingItem12", 
+name: "Halter",
+price: 60, 
+img: "pictures/halter.jpg",} ,
+{ id: "clothingItem13", 
+name: "Boho Top",
+price: 90, 
+img: "pictures/boho-top.jpg",} ,
+{ id: "clothingItem14", 
+name: "Flannel",
+price: 60,
+img: "pictures/flannel.jpg",} ,
+{id: "clothingItem15", 
+name: "Blouse",
+price: 70, 
+img:"pictures/brown-blouse.jpg",} ,
+{id: "clothingItem16", 
+name: "Sweater",
+price: 80, 
+img:"pictures/turtleneck.jpg",}
+
+];
+const mergedArray = [].concat (storeItemsData, topsItemsData);
