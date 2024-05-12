@@ -9,7 +9,7 @@ let {id, name, price, img} =x;
 let search = cart.find((x)=>x.id===id) || [];
   return `
 <div id=product-id-${id} class="card">
-  <img src=${img} class="img-fluid rounded shadow" alt="Dresses">
+  <img src=${img} class="img-fluid rounded shadow alt="Dresses">
   <div class="card-body">
     <p class="card-text">${name} </p>
 <div class="cost">

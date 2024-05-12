@@ -21,13 +21,17 @@ let generateCartItems = ()=> {
 let search = mergedArray.find((x) => x.id === id) || [];
 let { img, price, name } = search;
 return `
+<div class="summary">
 <div class="card">
-<img src=${img} width="50" class="card-img-top"/>
-<div class="card-body">
-<p>${name}</p> 
-<p>${price}</p>
-<div class="quantity">${item}</div>
-</div>
+  <div class="card-header">
+  ${name}
+  </div>
+  <div class="card-body">
+  <img src =${img} width= "200" class= "img-fluid rounded shadow ms-3"/>
+    <h5 class="card-title"></h5>
+    <p class="card-text">$${price}</p>
+    </div>
+  </div>
 </div>
 
 `;
