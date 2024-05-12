@@ -40,10 +40,9 @@ img:"pictures/turtleneck.jpg",}
 
 
 let generateTops = () =>{
-
 return (tops.innerHTML = topsItemsData.map((x) =>{
-let { id, name, price, img } =x;
-let search = cart.find((x) => x.id=== id) || [ ];
+let {id, name, price, img} =x;
+let search = cart.find((x)=>x.id===id) || [];
   return `
 <div id=product-id-${id} class="card">
   <img src=${img} class="img-fluid rounded shadow" alt="Dresses">
@@ -53,7 +52,7 @@ let search = cart.find((x) => x.id=== id) || [ ];
 <span>$ ${price} </span>
 <span class="quantity">
 <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
-<span id=${id} class="number">0</span>
+<span id=${id} class="number">${search.item===undefined? 0 : search.item}</span>
 <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
 </span>
 </div>
@@ -66,46 +65,47 @@ let search = cart.find((x) => x.id=== id) || [ ];
 
 generateTops(); 
   
+  
 let increment = (id) => {
-let selectedItem= id;
-let search = cart.find((x) =>x.id ===selectedItem.id);
-
-if (search === undefined){
-cart.push ({
-  id: selectedItem.id,
-  item: 1,
-});
-
-}else {
-  search.item +=1;
-}
-
-update(selectedItem.id);
-localStorage.setItem("amount", JSON.stringify(cart));
-};
-
-let decrement = (id) => {
   let selectedItem= id;
-let search = cart.find((x) =>x.id ===selectedItem.id);
-if (search ===undefined) return;
-else if (search.item ===0) return;
-else{
-  search.item -=1;
-}
-update(selectedItem.id);
-cart = cart.filter ((x) => x.item !==0);
-localStorage.setItem("amount", JSON.stringify(cart));
-};
-
-let update =(id) =>{
-  let search = cart.find ((x) => x.id ===id);
-  console.log(search.item);
-document.getElementById(id).innerHTML=search.item;
-calculation();
-
-};
-let calculation = () =>{
-let cartIcon =document.getElementById ("amount");
-cartIcon.innerHTML =cart.map((x) => x.item).reduce((x,y) => x+y,0);
-};
-calculation();
+  let search = cart.find((x) =>x.id ===selectedItem.id);
+  
+  if (search === undefined){
+  cart.push ({
+    id: selectedItem.id,
+    item: 1,
+  });
+  
+  }else {
+    search.item +=1;
+  }
+  update(selectedItem.id);
+  localStorage.setItem("amount", JSON.stringify(cart));
+  };
+  
+  let decrement = (id) => {
+    let selectedItem= id;
+  let search = cart.find((x) =>x.id === selectedItem.id);
+  if (search === undefined) return;
+  else if (search.item === 0) return;
+  else{
+    search.item -=1;
+  }
+  update(selectedItem.id);
+  cart = cart.filter ((x) => x.item !==0);
+  localStorage.setItem("amount",JSON.stringify(cart));
+  };
+  
+  let update = (id)=>{
+    let search =cart.find((x) =>x.id=== id);
+    document.getElementById(id).innerHTML =search.item;
+  calculation();
+  };
+  
+  let calculation = () => {
+    let cartIcon = document.getElementById("amount");
+    cartIcon.innerHTML = cart.map((x) => x.item).reduce((x, y) => x + y, 0);
+  };
+  
+  calculation();
+  
