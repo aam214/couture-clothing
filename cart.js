@@ -2,7 +2,7 @@ let total = document.getElementById("total");
 let SavedItems =document.getElementById("saved-items");
 
 
-const cart = JSON.parse(localStorage.getItem("amount")) || [ ] ;
+let cart = JSON.parse(localStorage.getItem("amount")) || [ ] ;
 
 let calculation = () => {
   let cartIcon = document.getElementById("amount");
@@ -53,5 +53,42 @@ total.innerHTML = `
 }
   };
 
+  generateCartItems();
 
-generateCartItems();
+let increment = (id) => {
+  let selectedItem= id;
+  let search = cart.find((x) =>x.id ===selectedItem.id);
+  
+  if (search === undefined){
+  cart.push ({
+    id: selectedItem.id,
+    item: 1,
+  });
+  
+  }else {
+    search.item +=1;
+  }
+  update(selectedItem.id);
+  localStorage.setItem("amount", JSON.stringify(cart));
+  };
+  
+  let decrement = (id) => {
+    let selectedItem= id;
+  let search = cart.find((x) =>x.id === selectedItem.id);
+  if (search === undefined) return;
+  else if (search.item === 0) return;
+  else{
+    search.item -=1;
+  }
+  update(selectedItem.id);
+  cart = cart.filter ((x) => x.item !==0);
+  generateCartItems();
+  localStorage.setItem("amount",JSON.stringify(cart));
+  };
+  
+  let update = (id)=>{
+  let search =cart.find((x) =>x.id=== id);
+  document.getElementById(id).innerHTML =search.item;
+  calculation();
+  };
+  
