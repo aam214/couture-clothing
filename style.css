@@ -126,6 +126,7 @@ margin-top: 20px;
 main i{
   font-size: 18px;
   flex-direction: row;
+  color: #fdb44b;
   justify-content: space-between;
 }
 
@@ -215,7 +216,8 @@ float: left;
   font-size: 12px;
 }
 .summary{
-  margin-left: 700px;
+  margin-left: 500px;
+  display: grid;
 }
 footer{
   margin-top: 400px;
