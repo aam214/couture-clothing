@@ -23,19 +23,20 @@ let { img, price, name } = search;
 return `
 <div class="summary">
 <div class="card">
-  <div class="card-header">
+  <h4 class="card-header">
   ${search.name}
-  </div>
+  </h4>
   <div class="card-body">
-  <div class="x"><i class="fa-solid fa-x"></i></div>
+<i onClick= "removeItem(${id})" class="fa-solid fa-x"></i>
   <img src =${search.img} width= "200" class= "ms-4 img-fluid rounded shadow ms-3"/>
-    <h5 class="card-title"></h5>
-    <p class="card-text">$${search.price}</p>
-    <span class="quantity">
+    <h4 class="card-title"></h4>
+    <p class="card-text ">$${search.price}</p>
+    <span class="quantity-cart">
     <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
     <span id=${id} class="number">${item}</span>
     <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
     </span>
+    <span class="total-cost">$ ${item * search.price}</span>
     </div>
   </div>
 </div>
@@ -69,6 +70,7 @@ let increment = (id) => {
     search.item +=1;
   }
   update(selectedItem.id);
+  generateCartItems();
   localStorage.setItem("amount", JSON.stringify(cart));
   };
   
@@ -92,3 +94,12 @@ let increment = (id) => {
   calculation();
   };
   
+
+  let removeItem = (id) => {
+  let selectedItem = id;
+  cart = cart.filter ((x) => x.id !== selectedItem.id);
+  generateCartItems();
+
+  localStorage.setItem("amount" , JSON.stringify(cart));
+
+  };

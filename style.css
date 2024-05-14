@@ -1,6 +1,7 @@
 body{
   font-family: "Antic Didone", serif;
   font-style: normal;
+  font-weight: 900;
   background-color:black;
 }
 header{
@@ -126,7 +127,7 @@ margin-top: 20px;
 main i{
   font-size: 18px;
   flex-direction: row;
-  color: #fdb44b;
+
   justify-content: space-between;
 }
 
@@ -136,14 +137,19 @@ main i{
   font-weight:900;
   padding-left: 8px;
 }
-.number{
-  padding-left: 10px;
+.total-cost{
   font-size: 20px;
-
+  padding-left: 150px;
+}
+.number{
+text-align: center;
 }
   .quantity{
-padding-left:120px;
+text-align: center;
+    font-size: 20px;
+  padding-left: 150px;
   }
+
 .click{
   padding: 10px;
   margin-top: 20px;
