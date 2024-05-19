@@ -115,8 +115,8 @@ let increment = (id) => {
       total.innerHTML= `
       <div class="total-summary"> 
       <h2 class="text-center">Total Price : $ ${amount}</h2>
-      <button class="button-shopping-cart">Checkout</button>
-      <button class="button-shopping-cart">Clear Cart</button>
+      <button class="checkout-button">Checkout</button>
+      <button class="clear-cart-button">Clear Cart</button>
       </div>`
   } else return;
 };
