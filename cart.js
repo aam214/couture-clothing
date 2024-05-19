@@ -106,5 +106,18 @@ let increment = (id) => {
   };
 
   let checkoutTotal = () => {
-
-  };
+    if (cart.length !== 0){
+      let amount =cart.map ((x) =>{
+        let { item, id }= x;
+        let filterData = mergedArray.find((y)=> y.id=== id);
+      return item * filterData.price;
+      }).reduce ((x,y) => x +y, 0);
+      total.innerHTML= `
+      <div class="total-summary"> 
+      <h2 class="text-center">Total Price : $ ${amount}</h2>
+      <button class="button-shopping-cart">Checkout</button>
+      <button class="button-shopping-cart">Clear Cart</button>
+      </div>`
+  } else return;
+};
+checkoutTotal();
