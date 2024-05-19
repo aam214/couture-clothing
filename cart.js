@@ -18,7 +18,7 @@ let generateCartItems = ()=> {
  return (SavedItems.innerHTML= cart.map ((x) =>{
 
   let { id, item } =x;
-let search = mergedArray.find((x) => x.id === id) || [];
+let search = mergedArray.find((y) => y.id === id) || [];
 let { img, price, name } = search;
 return `
 <div class="summary">
@@ -82,6 +82,7 @@ let increment = (id) => {
   else{
     search.item -=1;
   }
+
   update(selectedItem.id);
   cart = cart.filter ((x) => x.item !==0);
   generateCartItems();
@@ -89,8 +90,9 @@ let increment = (id) => {
   };
   
   let update = (id)=>{
-  let search =cart.find((x) =>x.id=== id);
+  let search = cart.find((x) => x.id=== id);
   document.getElementById(id).innerHTML =search.item;
+ 
   calculation();
   };
   
@@ -98,8 +100,11 @@ let increment = (id) => {
   let removeItem = (id) => {
   let selectedItem = id;
   cart = cart.filter ((x) => x.id !== selectedItem.id);
+  calculation();
   generateCartItems();
-
   localStorage.setItem("amount" , JSON.stringify(cart));
+  };
+
+  let checkoutTotal = () => {
 
   };
