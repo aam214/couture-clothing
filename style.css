@@ -8,7 +8,6 @@ header{
   background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)),
   url("pictures/icon.png");
 max-width: 1800px;
-
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -118,14 +117,13 @@ padding-bottom: 10px;
   margin-top: 50px;
 }
 .card{
-  width: 307px;
+width: 307px;
 margin-top: 20px;
 }
 .card-text {
   font-size: 27px;
   text-align: center;
 }
-
 .cost{
   margin-top: 40px;
   font-size: 20px;
@@ -164,10 +162,9 @@ color: white;
   transform: scale(1.02);
   cursor: pointer;
 }
-.shopping-cart-details{
-display:flex;
+.price{
+  font-size: 27px;
 }
-
 a{
 text-decoration: none;
 font-weight: 600;
@@ -241,13 +238,13 @@ footer a{
     letter-spacing: 2px;
 }  
 .checkout-button{
-  background-color: rgb(79, 143, 79);
+  background-color: #ff9a8d;
 }
-.cards{
-  border: 5px solid #fdb44b;;
+.shopping-cart-cards{
+  border: 5px solid #fdb44b;
   border-radius: 8px;
   width: 500px;
-  height: 310px;
+  height: 290px;
   background-color: white;
   
 }
@@ -256,6 +253,26 @@ footer a{
   opacity: 0.8;
   font-size: 20px;
   margin-left: 10px;
+}
+.shopping-cart-details{
+float: right;
+margin-left: -40px;
+}
+.cost-of-item{
+  font-size: 22px;
+}
+.total-cost{
+  font-size: 28px;
+  margin: 10px;
+  margin-top: 95px;
+  color:  #ff9a8d;
+}
+.number{
+  padding-left: 2px;
+}
+.quantity-in-cart{
+  font-size: 20px;
+  margin-top: 10px;
 }
 .summary, .total-summary{
     max-width: 500px;
