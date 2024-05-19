@@ -23,22 +23,19 @@ let { img, price, name } = search;
 return `
 <div class="summary">
 <div class="cards">
-  <h4 class="card-header ms-2">
-  ${name}
-  </h4>
-  <div class="details">
-<i onClick= "removeItem(${id})" class="fa-solid fa-x ms-5"></i>
-  <img src =${img} width= "180" class= "img-fluid rounded shadow ms-3"/>
-    <p>$${price}</p>
-    <span class="quantity-cart">
+  <h4 class="card-header ms-2">${name}</h4>
+  <div class="shopping-cart-details">
+<i onClick= "removeItem(${id})" class="fa-solid fa-x"></i>
+  <img src =${img} width= "150" class= "rounded shadow ms-4"/>
+    <p class="cost-of-item">$${price}</p>
+    <div>
     <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
     <span id=${id} class="number">${item}</span>
     <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
-    </span>
     <span class="total-cost">$ ${item * price}</span>
+    </div>
   </div>
   </div>
-</div>
 </div>
 
 `;

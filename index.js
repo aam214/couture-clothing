@@ -32,7 +32,6 @@ generateStore();
 let increment = (id) => {
 let selectedItem= id;
 let search = cart.find((x) =>x.id ===selectedItem.id);
-
 if (search === undefined){
 cart.push ({
   id: selectedItem.id,
