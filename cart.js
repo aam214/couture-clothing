@@ -22,22 +22,21 @@ let search = mergedArray.find((y) => y.id === id) || [];
 let { img, price, name } = search;
 return `
 <div class="summary">
-<div class="card">
-  <h4 class="card-header">
+<div class="cards">
+  <h4 class="card-header ms-2">
   ${search.name}
   </h4>
-  <div class="card-body">
-<i onClick= "removeItem(${id})" class="fa-solid fa-x"></i>
-  <img src =${search.img} width= "200" class= "ms-4 img-fluid rounded shadow ms-3"/>
-    <h4 class="card-title"></h4>
-    <p class="card-text ">$${search.price}</p>
+  <div class="details">
+<i onClick= "removeItem(${id})" class="fa-solid fa-x ms-5"></i>
+  <img src =${search.img} width= "180" class= "img-fluid rounded shadow ms-3"/>
+    <p>$${search.price}</p>
     <span class="quantity-cart">
     <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
     <span id=${id} class="number">${item}</span>
     <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
     </span>
     <span class="total-cost">$ ${item * search.price}</span>
-    </div>
+  </div>
   </div>
 </div>
 </div>
@@ -48,8 +47,10 @@ return `
   } else {
   SavedItems.innerHTML= "";
 total.innerHTML = `
- <div class="cart-message">Cart is Empty!</div>
- 
+ <div class="cart-message">
+ <h2>Cart is Empty!</h2>
+ <button class=home-button>Back to Home</button>
+ </div>
  `;
 }
   };
@@ -65,7 +66,6 @@ let increment = (id) => {
     id: selectedItem.id,
     item: 1,
   });
-  
   }else {
     search.item +=1;
   }
@@ -82,7 +82,6 @@ let increment = (id) => {
   else{
     search.item -=1;
   }
-
   update(selectedItem.id);
   cart = cart.filter ((x) => x.item !==0);
   generateCartItems();
@@ -92,8 +91,8 @@ let increment = (id) => {
   let update = (id)=>{
   let search = cart.find((x) => x.id=== id);
   document.getElementById(id).innerHTML =search.item;
- 
   calculation();
+  checkoutTotal();
   };
   
 
@@ -101,6 +100,7 @@ let increment = (id) => {
   let selectedItem = id;
   cart = cart.filter ((x) => x.id !== selectedItem.id);
   calculation();
+  checkoutTotal();
   generateCartItems();
   localStorage.setItem("amount" , JSON.stringify(cart));
   };
@@ -114,10 +114,14 @@ let increment = (id) => {
       }).reduce ((x,y) => x +y, 0);
       total.innerHTML= `
       <div class="total-summary"> 
-      <h2 class="text-center">Total Price : $ ${amount}</h2>
+      <h2 class="text-center">Total: $${amount}</h2>
       <button class="checkout-button">Checkout</button>
-      <button class="clear-cart-button">Clear Cart</button>
+      <button onClick="clearOut()" class="clear-cart-button">Clear Cart</button>
       </div>`
   } else return;
 };
 checkoutTotal();
+
+let clearOut = () => {
+
+}
