@@ -103,6 +103,6 @@ img:"pictures/red-strap-sandal.jpg",} ,
 name: "Walking Sandals",
 price: 40, 
 img:"pictures/blue-sandal.jpg",}
-
 ];
-const mergedArray = [].concat (storeItemsData, topsItemsData, shoesItemData);
+const mergedArray = storeItemsData.concat(topsItemsData, shoesItemsData);
+console.log(mergedArray);

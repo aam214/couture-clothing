@@ -1,3 +1,4 @@
+
 let tops =document.getElementById('tops');
 
 const cart = JSON.parse(localStorage.getItem("amount")) || [ ] ;
