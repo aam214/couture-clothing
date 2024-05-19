@@ -34,6 +34,7 @@ return `
       <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
       </div>
       <div class="total-cost">$ ${item * price}</div>
+
       </div>
       </div>
 `;
