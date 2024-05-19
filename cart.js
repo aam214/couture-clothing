@@ -123,5 +123,8 @@ let increment = (id) => {
 checkoutTotal();
 
 let clearOut = () => {
-
-}
+  cart = [];
+  generateCartItems();
+  calculation();
+  localStorage.setItem("amount" , JSON.stringify(cart));
+  };
