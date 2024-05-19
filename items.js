@@ -68,4 +68,41 @@ price: 80,
 img:"pictures/turtleneck.jpg",}
 
 ];
-const mergedArray = [].concat (storeItemsData, topsItemsData);
+
+let shoesItemsData = [
+  { id: "clothingItem17", 
+  name: "Suede Flats",
+price: 80,  
+img: "pictures/yellow-flats.jpg",} ,
+{id: "clothingItem18", 
+name: "Black Pumps",
+price: 120, 
+img: "pictures/black-pumps.jpg",} ,
+
+{id: "clothingItem19", 
+name: "Red Pumps",
+price: 150,
+img:"pictures/red-pumps.jpg",} ,
+{ id: "clothingItem20", 
+name: "Pink Sneakers",
+price: 78, 
+img: "pictures/pink-sneaker.jpg",} ,
+{ id: "clothingItem21", 
+name: "Silver Pumps",
+price: 95, 
+img:"pictures/silver-pump.jpg",} ,
+{ id: "clothingItem22", 
+name: "Golden Heels",
+price: 70,
+img: "pictures/gold-heel.jpg",} ,
+{id: "clothingItem23", 
+name: "Strappy Heels",
+price: 110, 
+img:"pictures/red-strap-sandal.jpg",} ,
+{id: "clothingItem24", 
+name: "Walking Sandals",
+price: 40, 
+img:"pictures/blue-sandal.jpg",}
+
+];
+const mergedArray = [].concat (storeItemsData, topsItemsData, shoesItemData);
