@@ -24,18 +24,18 @@ return `
 <div class="summary">
 <div class="cards">
   <h4 class="card-header ms-2">
-  ${search.name}
+  ${name}
   </h4>
   <div class="details">
 <i onClick= "removeItem(${id})" class="fa-solid fa-x ms-5"></i>
-  <img src =${search.img} width= "180" class= "img-fluid rounded shadow ms-3"/>
-    <p>$${search.price}</p>
+  <img src =${img} width= "180" class= "img-fluid rounded shadow ms-3"/>
+    <p>$${price}</p>
     <span class="quantity-cart">
     <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
     <span id=${id} class="number">${item}</span>
     <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
     </span>
-    <span class="total-cost">$ ${item * search.price}</span>
+    <span class="total-cost">$ ${item * price}</span>
   </div>
   </div>
 </div>
