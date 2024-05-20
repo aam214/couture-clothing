@@ -22,12 +22,12 @@ let search = mergedArray.find((y) => y.id === id) || [];
 let { img, price, name } = search;
 return `
 <div class="summary">
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 20rem;"  >
   <div class="card-body">
   <i onClick= "removeItem(${id})" class="fa-solid fa-x"></i>
     <h6 class="card-title">${name}</h6>
     <h6 class="card-subtitle mb-1">$${item * price}</h6>
-    <img src =${img} width= "150" class= "rounded shadow ms-4"/>
+    <img src =${img} width= "180" class= "rounded shadow ms-5"/>
     <div class="cost-of-item">$${price}</div>
     <span class="quantity-in-cart">
     <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
@@ -109,9 +109,11 @@ let increment = (id) => {
       }).reduce ((x,y) => x +y, 0);
       total.innerHTML= `
       <div class="total-summary"> 
-      <h2 class="text-center">Total: $${amount}</h2>
+      <h2 class="total-heading">Total: $${amount}</h2>
+      <div class="cart-buttons">
       <button class="checkout-button">Checkout</button>
       <button onClick="clearOut()" class="clear-cart-button">Clear Cart</button>
+      </div>
       </div>`
   } else return;
 };

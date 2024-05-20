@@ -136,9 +136,7 @@ margin-top: 20px;
   font-weight:900;
   padding-left: 8px;
 }
-.total-cost{
-  font-size: 20px;
-}
+
 .number{
 text-align: center;
 }
@@ -244,7 +242,7 @@ footer a{
     letter-spacing: 2px;
 }  
 .checkout-button{
-  background-color: #ff9a8d;
+  background-color: #31864a;
 }
 .shopping-cart-cards{
   border: 5px solid #fdb44b;
@@ -279,8 +277,12 @@ text-align: end;
 .summary, .total-summary{
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 30px;
     display: block;
+}
+
+.total-heading{
+  margin-top: -50px;
+font-size: 48px;
 }
 .cart-message{
   font-size: 40px;
