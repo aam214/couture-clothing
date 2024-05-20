@@ -315,17 +315,22 @@ font-size: 48px;
   section img{
     width:280px;
   }
+  container{
+    margin: 20px;
+  padding: 20px;
+  }
   .main-4-column{
     grid-template-columns: 1fr 1fr;
-    padding: 20px;
+    padding: 10px;
     gap: 5px;
   }
   .card{
     width: 176px;
     margin-top: 20px;
+  
   }
 .click{
-  margin-left: -2px;
+margin-left: 20px;
   padding: 5px 10px;
 }
 .cost{
@@ -337,19 +342,14 @@ font-size: 48px;
   font-size: 18px;
 }
 .quantity{
-  padding-left:2px;
+  padding-left: 10px;
+  align-items: baseline;
   font-size: 10px;
     }
 
-container{
-  margin: 20px;
-padding: 20px;
-}
 .btn {
   margin: 40px;
   padding: 15px 20px;
 }
-.summary{
-  margin-left: 130px;
-}
+
 }
