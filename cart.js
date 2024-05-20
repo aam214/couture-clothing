@@ -22,21 +22,20 @@ let search = mergedArray.find((y) => y.id === id) || [];
 let { img, price, name } = search;
 return `
 <div class="summary">
-  <div class="shopping-cart-cards">
-  <h4 class="card-header m-3">${name}</h4>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
   <i onClick= "removeItem(${id})" class="fa-solid fa-x"></i>
-    <img src =${img} width= "140" class= "rounded shadow ms-4"/>
-      <div class="shopping-cart-details">
-      <div class="cost-of-item">$${price}</div>
-      <div class="quantity-in-cart">
-      <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
-      <span id=${id} class="number">${item}</span>
-      <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
-      </div>
-      <div class="total-cost">$ ${item * price}</div>
-
-      </div>
-      </div>
+    <h6 class="card-title">${name}</h6>
+    <h6 class="card-subtitle mb-1">$${item * price}</h6>
+    <img src =${img} width= "150" class= "rounded shadow ms-4"/>
+    <div class="cost-of-item">$${price}</div>
+    <span class="quantity-in-cart">
+    <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
+    <span id=${id} class="number">${item}</span>
+    <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
+    </span>
+  </div>
+  </div>
 `;
  })
  .join(""));

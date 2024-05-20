@@ -63,6 +63,12 @@ h5{
   padding-left: 30px;
   letter-spacing: 2px;
 }
+h6{
+  color:  #ff9a8d;
+text-align: end;
+  font-size: 30px;
+  margin-top: -20px;
+}
 main i{
   font-size: 18px;
   flex-direction: row;
@@ -249,31 +255,26 @@ footer a{
   
 }
 .fa-x{
-  color:black;
+  color:#fdb44b;
   opacity: 0.8;
   font-size: 20px;
   margin-left: 10px;
 }
-.shopping-cart-details{
- float: right;
-
-}
 .cost-of-item{
-  margin: 10px;
   font-size: 22px;
-}
-.total-cost{
-  font-size: 28px;
-  margin: 10px;
-  margin-top: 95px;
-  color:  #ff9a8d;
+text-align: center;
+
 }
 .number{
   padding-left: 2px;
 }
 .quantity-in-cart{
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 22px;
+  align-items: baseline;
+  border: 3px solid #fdb44b;
+  padding: 3px;
+  cursor: pointer;
+text-align: end;
 }
 .summary, .total-summary{
     max-width: 500px;
