@@ -105,4 +105,4 @@ price: 40,
 img:"pictures/blue-sandal.jpg",}
 ];
 const mergedArray = storeItemsData.concat(topsItemsData, shoesItemsData);
-console.log(mergedArray);
+
