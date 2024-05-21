@@ -244,6 +244,7 @@ footer a{
 }  
 .checkout-button{
   background-color: #31864a;
+  margin: 12px;
 }
 .shopping-cart-cards{
   border: 5px solid #fdb44b;
@@ -352,6 +353,16 @@ margin-left: 20px;
 }
 .fa-minus, .fa-plus{
   font-size:14px; 
+}
+.total-heading{
+  font-size: 30px;
+  margin-top: 20px;
+}
+.total-summary{
+  text-align: center;
+}
+.checkout-button, .clear-cart-button{
+  padding: 10px 15px;
 }
 .btn {
   margin: 40px;
