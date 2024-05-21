@@ -12,18 +12,18 @@ let search = cart.find((x)=>x.id===id) || [];
   <img src=${img} class="img-fluid rounded shadow alt="Dresses">
   <div class="card-body">
     <p class="card-text">${name} </p>
-<div class="cost">
-<span>$ ${price} </span>
-<span class="quantity">
-<i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
-<span id=${id} class="number">${search.item===undefined? 0 : search.item}</span>
-<i class="fa-solid fa-plus" onClick="increment(${id})"></i>
-</span>
-</div>
-<div class="click">Add to cart</div>
-</div>
-</div>`;
-})
+    <div class="cost">
+    <span>$ ${price} </span>
+    <span class="quantity">
+    <i class="fa-solid fa-minus" onClick="decrement(${id})"></i>
+    <span id=${id} class="number">${search.item===undefined? 0 : search.item}</span>
+    <i class="fa-solid fa-plus" onClick="increment(${id})"></i>
+    </span>
+    </div>
+    <div class="click">Add to cart</div>
+    </div>
+    </div>`;
+    })
 .join(""));
 };
 
